@@ -1,0 +1,40 @@
+# Diary (restricted) cell: an empty cell made from the retired SQLite tables (journal).
+# The domain had no rows when it left the control plane (2026-10-11); new features are built here.
+cell: diary
+title: Diary (restricted)
+resources:
+  journal-entry:
+    table: journal
+    plural: journal-entries
+    filters:
+    - entry_type
+    fields:
+      entry_type:
+        type: enum
+        values:
+        - daily
+        - weekly
+        - monthly
+        - lesson
+        - idea
+        - reflection
+      title:
+        type: text
+        required: true
+      content:
+        type: text
+        required: true
+      tags:
+        type: text
+      related_skill_ids:
+        type: text
+      related_asset_ids:
+        type: text
+      mood:
+        type: int
+      energy_level:
+        type: int
+      entry_date:
+        type: date
+        required: true
+
