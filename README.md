@@ -1,5 +1,4 @@
-# diary
-
+# life-diary-api
 The Diary (restricted) cell: its own API (Railway, serverless) and its own Neon
 database, described by `cell.yaml` and served by the code in `src/cellkit/`, which
 this repository owns. It
@@ -8,8 +7,8 @@ HTTP with the caller's token.
 
 | | |
 |---|---|
-| API | Railway project `diary`, service `diary-api` (Serverless) |
-| Data | Neon project `diary`, database `diary` |
+| API | Railway project `life-diary-api`, service `diary-api` (Serverless) |
+| Data | Neon project `life-diary-api`, database `diary` |
 | Registry | solo-empire `repository-catalog/registries/online-systems.yaml` (`diary`) |
 
 ## API
